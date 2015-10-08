@@ -6,5 +6,13 @@
 }
 
 p{
-  font-size: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.box{
+  background-color: yellow;
+  border: solid blue;
+  margin: 10px 0 10px 0;
+  padding: 15px 0 15px 0;
 }

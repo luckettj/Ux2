@@ -23,11 +23,10 @@ Or as an EMPLOYER...
 		Name:
 		Age:
 	
-		Job Description:
-		Required Skills & Experience:
-		Asking Price: (completely up to the employer)
-		Job Location:
-		Ideal Execution Date:
+		Job's Executed:
+		Job Catagories:
+		Job Locations:
+		Execution Dates:
 
 		Employer Input:
 
@@ -48,6 +47,20 @@ HIRE portal:
 	When you enter the HIRE portal, there will be a few options:
 		Profile: (view/edit)
 		Post Job: (can specify asking price, required labour)
+			Name:
+			Age:
+	
+			Job Description:
+			Required Skills & Experience:
+			Asking Price: (completely up to the employer)
+			Job Location:
+			Ideal Execution Date:
+
+			Employer Input:
+
+			e-mail:
+			phone #:
+
 		Search Employees: (find people willing to work certain hours in a specific city for a prefered price)
 
 
