@@ -1,18 +1,6 @@
-#button p{
-  background-color: red;
-  border: solid green;
-  margin: 10px 0 10px 0;
-  padding: 15px 0 15px 0;
-}
-
-p{
-  font-size: 20px;
-  font-family: sans-serif;
-}
-
-.box{
+.button{
+  margin: 0 0 0 0;
+  padding: 10px;
   background-color: yellow;
-  border: solid blue;
-  margin: 10px 0 10px 0;
-  padding: 15px 0 15px 0;
+  border-radius: 10px;
 }

@@ -4,50 +4,80 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<title>Ux2</title>
 </head>
 
 <body>
 
-<div id="button">
-  	<p href="_____">I'm looking to WORK</p>
-  	<p href="_____">I'm looking to HIRE</p>
+<!-- Worker Profile Form -->
+<div class="worker_profile contatiner">
+<form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
+
+	<h3>Worker's Profile</h3>
+	
+	<div class="form-group">
+		<label for="worker_info"/>Worker Information</label>
+		<input type="name" id="worker_info" placeholder="Full Name" name="worker_name[]" required/>
+		<input type="age" id="worker_info" placeholder="Age" name="worker_age[]" required/>
+		<input type="text" id="worker_info" placeholder="Address" name="worker_address[]" required/>
+		<select type="gender" id="worker_info" name="worker_sex[]" required>
+			<option value="">Gender</option>
+			<option value="Male">Male</option>
+			<option value=" Female">Female</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="worker_experience"/>Work History + Experience</label><br/>
+		<textarea id="worker_experience" name="worker_experience[]" cols="30" row="10"/></textarea><br/>
+
+		<label for="worker_contact_info">Contact Information</label>
+		<input type="email" id="worker_contact_info" placeholder="E-mail" name="worker_email[]" required/>
+		<input type="tel" id="worker_contact_info" placeholder="Phone Number" name="worker_telnumber[]" required/>
+		<input type="url" id="worker_contact_info" placeholder="Website" name="worker_website[]"/>
+	</div>
+
+	<div class="form-group">
+		<label for="worker_profile_button"></label>
+		<button type="submit" id="worker_profile_button" class="button" name="update_worker_profile">Update Profile</button>
+	</div>
+</form>
 </div>
 
-// WORK Profile //
-<div class="box">
-	<h1>Worker's Profile</h1>
-	<input type=”text” placeholder=”Name”/>
-	<input type=”text” placeholder=”Age”/>
-	<p></p>
-	<input type=”text” placeholder=”Address”/>
-	<input type=”text” placeholder=”AvaliableWorkingHours”/>
-	<p></p>
-	<input type=”text” placeholder=”WorkHistory”/>
-	<input type=”text” placeholder=”Experience”/>
-	<p></p>
-	<input type=”text” placeholder=”WorkerInput”/>
-	<p></p>
-	<input type=”text” placeholder=”e-mail”/>
-	<input type=”text” placeholder=”PhoneNumber”/>
-</div>
+<!-- Employer profile Form -->
+<div class="employer_profile container"/>
+<form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
 
-// HIRE Profile //
-<div class="box">
-	<h1>Employer's Profile</h1>
-	<input type=”text” placeholder=”Name”/>
-	<input type=”text” placeholder=”Age”/>
-	<input type=”text” placeholder=”Address”/>
-	<p></p>
-	<input type=”text” placeholder=”JobsExecuted”/>
-	<input type=”text” placeholder=”JobCatagories”/>
-	<input type=”text” placeholder=”JobLocations”/>
-	<input type=”text” placeholder=”ExecutionDates”/>
-	<p></p>
-	<input type=”text” placeholder=”EmployerInput”/>
-	<p></p>
-	<input type=”text” placeholder=”e-mail”/>
-	<input type=”text” placeholder=”PhoneNumber”/>
+	<h3>Employer's Profile</h3>
+	
+	<div class="form-group">
+		<label for="employer_info"/>Employer Information</label>
+		<input type="text" id="employer_info" placeholder="Full Name" name="employer_name[]" required/>
+		<input type="text" id="employer_info" placeholder="Age" name="employer_age[]" required/>
+		<input type="text" id="employer_address" placeholder="Address" name="employer_address[]" required/>
+		<select type="gender" id="employer_info" name="employer_sex[]" required/>
+			<option value="">Gender</option>
+			<option value="Male">Male</option>
+			<option value=" Female">Female</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="employer_experience"/>Work History + Experience</label>
+		<textarea id="employer_experience" name="employer_experience[]" cols="30" row="10"/></textarea>
+
+		<label for="employer_contact_info">Contact Information</label>
+		<input type="email" id="employer_contact_info" placeholder="E-mail" name="employer_email[]" required/>
+		<input type="tel" id="employer_contact_info" placeholder="Phone Number" name="employer_telnumber[]" required/>
+		<input type="url" id="employer_contact_info" placeholder="Website" name="employer_website[]"/>
+	</div>
+
+	<div class="form-group">
+		<label for="employer_profile_button"></label>
+		<button type="submit" id="employer_profile_button" class="button" name="update_employer_profile">Update Profile</button>
+	</div>
+</form>
 </div>
 
 </body>
