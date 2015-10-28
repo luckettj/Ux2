@@ -11,13 +11,12 @@
 <body>
 
 <!-- Worker Profile Form -->
-<div class="worker_profile contatiner">
+<div id="worker_profile" class="container"/>
 <form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
-
 	<h3>Worker's Profile</h3>
 	
 	<div class="form-group">
-		<label for="worker_info"/>Worker Information</label>
+		<label for="worker_info"/>Worker Information</label><br/>
 		<input type="name" id="worker_info" placeholder="Full Name" name="worker_name[]" required/>
 		<input type="age" id="worker_info" placeholder="Age" name="worker_age[]" required/>
 		<input type="text" id="worker_info" placeholder="Address" name="worker_address[]" required/>
@@ -32,7 +31,7 @@
 		<label for="worker_experience"/>Work History + Experience</label><br/>
 		<textarea id="worker_experience" name="worker_experience[]" cols="30" row="10"/></textarea><br/>
 
-		<label for="worker_contact_info">Contact Information</label>
+		<label for="worker_contact_info">Contact Information</label><br/>
 		<input type="email" id="worker_contact_info" placeholder="E-mail" name="worker_email[]" required/>
 		<input type="tel" id="worker_contact_info" placeholder="Phone Number" name="worker_telnumber[]" required/>
 		<input type="url" id="worker_contact_info" placeholder="Website" name="worker_website[]"/>
@@ -46,13 +45,12 @@
 </div>
 
 <!-- Employer profile Form -->
-<div class="employer_profile container"/>
+<div id="employer_profile" class="container"/>
 <form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
-
 	<h3>Employer's Profile</h3>
 	
 	<div class="form-group">
-		<label for="employer_info"/>Employer Information</label>
+		<label for="employer_info"/>Employer Information</label><br/>
 		<input type="text" id="employer_info" placeholder="Full Name" name="employer_name[]" required/>
 		<input type="text" id="employer_info" placeholder="Age" name="employer_age[]" required/>
 		<input type="text" id="employer_address" placeholder="Address" name="employer_address[]" required/>
@@ -64,10 +62,10 @@
 	</div>
 
 	<div class="form-group">
-		<label for="employer_experience"/>Work History + Experience</label>
-		<textarea id="employer_experience" name="employer_experience[]" cols="30" row="10"/></textarea>
+		<label for="employer_experience"/>Work History + Experience</label><br/>
+		<textarea id="employer_experience" name="employer_experience[]" cols="30" row="10"/></textarea><br/>
 
-		<label for="employer_contact_info">Contact Information</label>
+		<label for="employer_contact_info">Contact Information</label><br/>
 		<input type="email" id="employer_contact_info" placeholder="E-mail" name="employer_email[]" required/>
 		<input type="tel" id="employer_contact_info" placeholder="Phone Number" name="employer_telnumber[]" required/>
 		<input type="url" id="employer_contact_info" placeholder="Website" name="employer_website[]"/>
