@@ -1,6 +1,31 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 .button{
   margin: 0 0 0 0;
   padding: 10px;
   background-color: yellow;
   border-radius: 10px;
+}
+
+div .portal{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+div .frontpage{
+  float: left;
+  width: 700px;
 }
