@@ -48,24 +48,39 @@
   </div><!-- /.container-fluid -->
 </nav>	
 
-<div class="container">
-
-
-
-
-
-	<div class="jumbotron">
-
+<!-- Employer profile Form -->
+<div id="employer_profile" class="container"/>
+<form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
+	<h3>Employer's Profile</h3>
+	
+	<div class="form-group">
+		<label for="employer_info"/>Employer Information</label><br/>
+		<input type="text" id="employer_info" placeholder="Full Name" name="employer_name[]" required/>
+		<input type="text" id="employer_info" placeholder="Age" name="employer_age[]" required/>
+		<input type="text" id="employer_address" placeholder="Address" name="employer_address[]" required/>
+		<select type="gender" id="employer_info" name="employer_sex[]" required/>
+			<option value="">Gender</option>
+			<option value="Male">Male</option>
+			<option value=" Female">Female</option>
+		</select>
 	</div>
-</div>
 
-<footer>
-	<div class="container contact text-center" id="footer">
-		<h4>Jeffrey Luckett, Founder</h4>
-		<h4>519-615-3621</h4>
-		<h4>jeffrey.m.luckett@gmail.com</h4>
-	</div>	
-</footer>
+	<div class="form-group">
+		<label for="employer_experience"/>Work History + Experience</label><br/>
+		<textarea id="employer_experience" name="employer_experience[]" cols="30" row="10"/></textarea><br/>
+
+		<label for="employer_contact_info">Contact Information</label><br/>
+		<input type="email" id="employer_contact_info" placeholder="E-mail" name="employer_email[]" required/>
+		<input type="tel" id="employer_contact_info" placeholder="Phone Number" name="employer_telnumber[]" required/>
+		<input type="url" id="employer_contact_info" placeholder="Website" name="employer_website[]"/>
+	</div>
+
+	<div class="form-group">
+		<label for="employer_profile_button"></label>
+		<button type="submit" id="employer_profile_button" class="button" name="update_employer_profile">Update Profile</button>
+	</div>
+</form>
+</div>
 
 <!-- jQuery Library -->
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -73,5 +88,4 @@
 <script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
