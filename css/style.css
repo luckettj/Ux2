@@ -22,12 +22,24 @@
 div.jumbotron{
   background-color: yellow;
   width: auto;
-  height: 500px;
-  margin: 0;
+  height: auto;
+  margin: 10px 0 0 0;
 }
 
 #footer{
   padding: 0 0 0 0;
   margin: 20px 0 20px 0;
   width: auto;
+}
+
+div.topjumbo{
+  margin: 61px 0 0 0;
+}
+
+div#left{
+  padding: 0 7.5px 0 15px;
+}
+
+div#right{
+  padding: 0 15px 0 7.5px;
 }

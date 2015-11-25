@@ -11,7 +11,7 @@
 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -36,11 +36,11 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Navigate <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="index.html">How Ux2 Works</a></li>
-            <li><a href="index.html">History</a></li>
-            <li><a href="#index.html">Customers</a></li>
+            <li><a href="#howux2works">How Ux2 Works</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#history">History</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="#footer">Contact Us</a></li>
           </ul>
         </li>
       </ul>
@@ -49,38 +49,68 @@
   </div><!-- /.container-fluid -->
 </nav>	
 
-<!-- Worker Profile Form -->
-<div id="worker_profile" class="container "/>
+<!--New to Ux2?-->
+<div class="container col-xs-6 text-center" id="left">
+  <div class="jumbotron topjumbo">
+    <h2>New to Ux2?</h2>
+     <button href="#worker_profile">Fill out the form below!</button>
+  </div>
+<!-- Worker profile Form -->
+<div id="worker_profile" class="text-center">
 <form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
-	<h3>Worker's Profile</h3>
-	
-	<div class="form-group">
-		<label for="worker_info"/>Worker Information</label><br/>
-		<input type="name" id="worker_info" placeholder="Full Name" name="worker_name[]" required/>
-		<input type="age" id="worker_info" placeholder="Age" name="worker_age[]" required/>
-		<input type="text" id="worker_info" placeholder="Address" name="worker_address[]" required/>
-		<select type="gender" id="worker_info" name="worker_sex[]" required>
-			<option value="">Gender</option>
-			<option value="Male">Male</option>
-			<option value=" Female">Female</option>
-		</select>
-	</div>
+  <h3>Worker's Profile</h3>
+  
+  <div class="form-group">
+    <label for="worker_info">Worker Information</label><br/>
+    <input type="text"  placeholder="Full Name" required/>
+    <input type="text"  placeholder="Age" required/>
+    <input type="text"  placeholder="Address" required/>
+    <select type="gender" required/>
+      <option value="">Gender</option>
+      <option value="Male">Male</option>
+      <option value=" Female">Female</option>
+    </select>
+  </div>
 
-	<div class="form-group">
-		<label for="worker_experience"/>Work History + Experience</label><br/>
-		<textarea id="worker_experience" name="worker_experience[]" cols="30" row="10"/></textarea><br/>
+  <div class="form-group">
+    <label for="worker_experience">Work History + Experience</label><br/>
+    <textarea cols="30" row="10"/></textarea><br/>
+    <label for="worker_contact_info">Contact Information</label><br/>
+    <input type="email" placeholder="E-mail" required/>
+    <input type="tel" placeholder="Phone Number" required/>
+    <input type="url" placeholder="Website" />
+  </div>
 
-		<label for="worker_contact_info">Contact Information</label><br/>
-		<input type="email" id="worker_contact_info" placeholder="E-mail" name="worker_email[]" required/>
-		<input type="tel" id="worker_contact_info" placeholder="Phone Number" name="worker_telnumber[]" required/>
-		<input type="url" id="worker_contact_info" placeholder="Website" name="worker_website[]"/>
-	</div>
-
-	<div class="form-group">
-		<label for="worker_profile_button"></label>
-		<button type="submit" id="worker_profile_button" class="button" name="update_worker_profile">Update Profile</button>
-	</div>
+  <div class="form-group">
+    <label for="worker_profile_button"></label>
+    <button type="submit" id="worker_profile_button" class="button" name="update_worker_profile">Update Profile</button>
+  </div>
 </form>
+</div>
+</div>
+<!--Search-->
+<div class="container col-xs-6 text-center" id="right">
+  <div class="jumbotron topjumbo">
+    <form class="form" action="http://174.129.248.23/brainstation/files/submittingforms.php" method="POST"/>
+      <h2>Search for jobs using the following criteria:</h2>
+      <br/>
+        <div class="form-group">
+          <label for="jobdescription">Job Description</label><br/>
+          <textarea id="jobdescription" cols="30" row="10" required/></textarea><br/>
+          <input type="text" placeholder="Start Date" required/>
+          <input type="text" placeholder="Projected End Date"/>
+        </div>     
+        <div class="form-group"> 
+          <label for="skills">Skills Required</label><br/>
+          <textarea id="skills" cols="30" row="10" required/></textarea><br/>
+          <input type="text" placeholder="Years of Experience" required/>
+        </div> 
+        <div class="form-group">
+          <label for="workersearch"></label>
+          <button type="submit" class="button" name="workersearch">Search for Jobs!</button>
+        </div>
+    </form>
+  </div>
 </div>
 
 <!-- jQuery Library -->
